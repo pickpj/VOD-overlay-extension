@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 200px;
+      height: 150px;
+      color: white;
+
+    }
+    gridtxt {
+      float: left;
+      width: 25%;
+      height:35px;
+      padding:0px;
+      line-height: 0.9;
+      text-align: center;
+    }
+    gridrng {
+      float: left;
+      width: 75%;
+      height:35px;
+      padding: 0px;
+    }
+  </style>
+</head>
+<body style="background-color:#424044;">
+
+  <div class="grid-container">
+    <gridtxt>Top Margin</gridtxt>
+    <gridrng><input type="range" min="0" max="90" class="slider" id="top"></gridrng>
+    <gridtxt>Left Margin</gridtxt>
+    <gridrng><input type="range" min="0" max="90" class="slider" id="left"></gridrng>
+    <gridtxt>Width</gridtxt>
+    <gridrng><input type="range" min="0" max="100" class="slider" id="width"></gridrng>
+    <gridtxt>Height</gridtxt>
+    <gridrng><input type="range" min="0" max="100" class="slider" id="height"></gridrng>
+  </div>
+  <button id="send">Show</button>
+  <button id="capture">Capture</button>
+  <img id="capture-image"  width="200" height="100">
+  <script src="popup.js"></script>
+
+</body>
+</html>
